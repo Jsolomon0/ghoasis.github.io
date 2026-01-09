@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentle Hands Oasis - Home Care in Tampa Bay</title>
+    <!-- Google Fonts for professional typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #007bff; /* Example blue, adjust to your logo */
+            --primary-green: #28a745; /* Example green, adjust to your logo */
+            --light-blue: #e0f2f7; /* Very light blue */
+            --light-green: #c8e6c9; /* Very light green */
+            --accent-teal: #4CAF50; /* Button color */
+            --text-color: #333;
+            --white-text: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow: hidden; /* Hide scrollbars if content overflows during animation */
+            height: 100vh; /* Ensure the body takes full viewport height for gradient */
+            display: flex; /* Flexbox for centering content */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative; /* For absolute positioning of overlay if needed */
+
+            /* Animated Gradient Background */
+            background: linear-gradient(-45deg, var(--light-blue), var(--light-green), var(--primary-blue), var(--primary-green));
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hero-container {
+            max-width: 900px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for readability */
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            margin: 20px; /* Add some margin for smaller screens */
+            position: relative; /* For z-index if background is more complex */
+            z-index: 10;
+        }
+
+        .logo {
+            max-width: 250px; /* Adjust size as needed */
+            height: auto;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.8em; /* Large heading */
+            margin-bottom: 15px;
+            color: var(--primary-blue); /* Use a brand color for the heading */
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: var(--text-color);
+            max-width: 700px; /* Limit paragraph width for readability */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: var(--accent-teal);
+            color: var(--white-text);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.3em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #368a3c; /* Darker green on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-container {
+                padding: 30px;
+                margin: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+            .logo {
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+            .logo {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <!-- Replace 'path/to/your/logo.png' with the actual path to your logo on GitHub Pages -->
+        <!-- For now, you might temporarily host your logo in the same GitHub Pages repo -->
+        <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/logo.png" alt="Gentle Hands Oasis Logo" class="logo">
+        
+        <h1>Your Oasis of Compassionate Home Care in Tampa Bay</h1>
+        <p>Dedicated to empowering independent living at home with trusted, person-centered services across the Tampa Bay area. We are here to provide the support your loved ones deserve.</p>
+        <a href="https://sites.google.com/view/oasismd/contact-us" target="_parent" class="cta-button">Get Care Now</a>
+    </div>
+</body>
+</html>
